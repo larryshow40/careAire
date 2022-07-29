@@ -1,0 +1,18 @@
+.cta-section {
+    background-image: url(../img/cta-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($black, .65);
+        z-index: -1;
+    }
+}

@@ -1,0 +1,22 @@
+.contact-section {
+    background: $primary;
+    @include md-screen {
+        background: linear-gradient(to bottom, transparent 35%, #33BDFF 35%);
+    }
+    @include lg-screen {
+        background: linear-gradient(to bottom, transparent 37%, #33BDFF 37%);
+    }
+    @include xl-screen {
+        background: linear-gradient(to bottom, transparent 45%, #33BDFF 45%);
+    }
+    @include xli-screen {
+        background: linear-gradient(to bottom, transparent 38%, #33BDFF 38%);
+    }
+    &__title {
+        color: $white;
+        @include md-screen {
+            color: $heading-text;
+            padding-bottom: 50px;
+        }
+    }
+}

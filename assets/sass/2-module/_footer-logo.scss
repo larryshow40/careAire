@@ -1,0 +1,6 @@
+.footer-logo {
+    @include lg-screen {
+        position: relative;
+        border-right: 1px solid rgba($white, .7);
+    }
+}

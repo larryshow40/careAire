@@ -1,0 +1,51 @@
+.feedback-card {
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  @include iphn-plus {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &::after {
+    content: "\ee84";
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    font-size: 38px;
+    color: rgba($primary, .2);
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  &__profile {
+    display: flex;
+    align-items: center;
+    &-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &-info {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &-name {
+      font-size: 18px;
+      font-family: $heading-font;
+      color: $heading-text;
+    }
+  }
+  &__comment {
+    font-weight: 500;
+    font-style: italic;
+  }
+}

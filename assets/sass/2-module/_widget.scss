@@ -1,0 +1,18 @@
+.widget {
+    padding: 30px 15px;
+    border-radius: 5px;
+    @include xlii-screen {
+        padding: 40px 30px;
+    }
+    &-alt {
+        &__head {
+            padding: 15px 30px;
+            border-radius: 5px 5px 0 0;
+            background: $primary;
+        }
+        &__body  {
+            background: $light-1;
+            padding: 15px 30px;
+        }
+    }
+}

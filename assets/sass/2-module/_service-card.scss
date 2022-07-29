@@ -1,0 +1,10 @@
+.service-card {
+    padding: 30px;
+    border-radius: 10px;
+    @include md-screen {
+        padding: 30px 15px;
+    }
+    @include lg-screen {
+        padding: 60px 30px;
+    }
+}

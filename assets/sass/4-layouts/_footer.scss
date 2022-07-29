@@ -1,0 +1,15 @@
+.footer {
+  background: $dark-2;
+  &-top {
+    padding-top: clamp(60px, 8vw, 120px);
+    padding-bottom: clamp(60px, 8vw, 120px);
+    @include lg-screen {
+        padding-top: clamp(60px, 16vw, 245px);
+    }
+  }
+  &-copyright {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-top: 1px solid rgba($white, .2);
+  }
+}

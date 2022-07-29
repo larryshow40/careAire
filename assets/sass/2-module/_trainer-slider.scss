@@ -1,0 +1,42 @@
+.trainer-slider {
+    &__item {
+        @include iphn-screen {
+            padding-right: .5rem;
+            padding-left: .5rem;
+        }
+        @include xlii-screen {
+            padding-right: .7rem;
+            padding-left: .7rem;
+        }
+    }
+    &__btn {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        background: $primary;
+        font-size: 24px;
+        color: $white;
+        text-align: center;
+        transition: all .3s ease;
+        z-index: 1;
+        &:hover {
+            background: $white;
+            color: $primary;
+            box-shadow: 0 10px 15px rgba($dark, .4);
+        }
+        &-prev {
+            left: 0;
+        }
+        &-next {
+            right: 0;
+        }
+    }
+    .slick-list {
+        margin-bottom: -20px;
+    }
+}

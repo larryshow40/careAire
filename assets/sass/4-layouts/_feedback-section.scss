@@ -1,0 +1,7 @@
+.feedback-section {
+    position: relative;
+    // overflow-x: hidden;
+    @include xl-screen {
+        background: linear-gradient(to left, transparent 62%, $primary 50%);
+    }
+}

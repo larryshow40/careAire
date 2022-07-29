@@ -1,0 +1,54 @@
+.form-control-custom {
+  height: 50px;
+  line-height: 48px;
+  border-radius: 3px;
+  font-size: 16px;
+  &::placeholder {
+    text-transform: capitalize;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &--outline {
+    background: transparent;
+    &:focus {
+      background: transparent;
+      outline: none;
+      box-shadow: none;
+    }
+    &-light {
+      border-color: $white;
+      color: $white;
+      &::placeholder {
+        color: rgba($white, 0.7);
+      }
+      &:focus {
+        border-color: $white;
+        color: $white;
+      }
+    }
+    &-dark {
+      border-color: $border;
+      color: $text;
+      &::placeholder {
+        color: rgba($text, 0.7);
+      }
+      &:focus {
+        border-color: $border;
+        color: $text;
+      }
+    }
+    &-thin {
+      border-color: rgba($white, 0.2);
+      color: $white;
+      &::placeholder {
+        color: rgba($white, 0.7);
+      }
+      &:focus {
+        border-color: rgba($white, 0.3);
+        color: $white;
+      }
+    }
+  }
+}

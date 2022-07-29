@@ -1,0 +1,11 @@
+.gmap {
+    width: 100%;
+    @include lg-screen {
+        position: relative;
+        margin-bottom: -130px;
+    }
+    iframe {
+        width: 100%;
+        height: 600px;
+    }
+}

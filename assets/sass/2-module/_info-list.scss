@@ -1,0 +1,40 @@
+.vf-info-list {
+    display: flex;
+    align-items: center;
+    &__item {
+        padding: 13px 45px;
+        position: relative;
+        @include lg-screen {
+            padding: 12px 25px;
+        }
+        @include xl-screen {
+            padding: 12px 45px;
+        }
+        &::after {
+            content: '';
+            width: 1px;
+            height: 20px;
+            background: $white;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__text {
+        letter-spacing: .1em;
+        font-weight: 400;
+    }
+    &--alt {
+        .vf-info-list__item {
+            &::after {
+                background: $primary;
+            }
+        }
+    }
+}

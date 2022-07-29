@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViserFly - Aviation & Flight School</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="assets/img/favicon.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <!-- Slick  -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css" />
+    <!-- Box Icon  -->
+    <link rel="stylesheet" href="assets/css/lib/boxicons.css" />
+    <!-- Nice Select  -->
+    <link rel="stylesheet" href="assets/css/lib/nice-select.css" />
+    <!-- Odometer  -->
+    <link rel="stylesheet" href="assets/css/lib/odometer-theme-default.css" />
+    <!-- Magnific PopUp -->
+    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Preloader  -->
+    <div class="preloader">
+      <div class="preloader__loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Modal -->
+    <div class="modal fade" id="vfSignIn" tabindex="-1" aria-hidden="true">
+      <div
+        class="
+          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="auth-form">
+              <button
+                type="button"
+                class="btn-close auth-form__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="container-fluid p-lg-0">
+                <div class="row g-lg-0">
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <div class="h-100 auth-form__bg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="auth-form__content section">
+                      <h3 class="text-capitalize text-center mt-0 mb-4">
+                        Welcome to viserfly
+                      </h3>
+                      <form action="#" class="row g-4">
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bxs-user"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="auth-form__input"
+                              placeholder="user name or email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button
+                            class="
+                              btn btn--primary btn--xxl
+                              w-100
+                              text-capitalize
+                              xl-text
+                            "
+                          >
+                            sign in
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Don't have an account yet?
+                            <button
+                            type="button"
+                              class="t-link border-0 bg--light btn-link t-link--primary text--primary"
+                              data-bs-target="#vfSignUp" data-bs-toggle="modal"
+                            >
+                              create account
+                            </button>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__divider">
+                            <span
+                              class="
+                                d-block
+                                text-center text-capitalize
+                                auth-form__divider-text
+                              "
+                            >
+                              or
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Continue with social media
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <ul class="list list--row justify-content-center">
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--primary
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--danger
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-youtube"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--info
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="vfSignUp" tabindex="-1" aria-hidden="true">
+      <div
+        class="
+          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="auth-form">
+              <button
+                type="button"
+                class="btn-close auth-form__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="container-fluid p-lg-0">
+                <div class="row g-lg-0">
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <div class="h-100 auth-form__bg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="auth-form__content section">
+                      <h3 class="text-capitalize text-center mt-0 mb-4">
+                        Welcome to viserfly
+                      </h3>
+                      <form action="#" class="row g-4">
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bxs-user"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="auth-form__input"
+                              placeholder="user name or email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="confirm password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button
+                            class="
+                              btn btn--primary btn--xxl
+                              w-100
+                              text-capitalize
+                              xl-text
+                            "
+                          >
+                            create account
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Already have an account yet?
+                            <button
+                            type="button"
+                              class="t-link border-0 bg--light btn-link t-link--primary text--primary"
+                              data-bs-target="#vfSignIn" data-bs-toggle="modal"
+                            >
+                              sign in
+                            </button>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__divider">
+                            <span
+                              class="
+                                d-block
+                                text-center text-capitalize
+                                auth-form__divider-text
+                              "
+                            >
+                              or
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Continue with social media
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <ul class="list list--row justify-content-center">
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--primary
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--danger
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-youtube"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--info
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 End-->
+    <!-- search Popup -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+      <form action="#" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search....." />
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </form>
+    </div>
+    <!--search Popup -->
+    <!-- Banner  -->
+    <div class="banner">
+      <header class="header">
+        <div class="container">
+          <div class="row g-0 align-items-center align-items-lg-start">
+            <div class="col-6 col-lg-2">
+              <!-- Logo  -->
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/logo.png"
+                  alt="viserhyip"
+                  class="img-fluid logo__is"
+                />
+              </a>
+              <!-- Logo End -->
+            </div>
+            <div class="col-6 col-lg-10">
+              <ul class="list list--row d-none d-lg-flex align-items-center">
+                <li class="list--row__item">
+                  <ul class="list vf-info-list">
+                    <li class="vf-info-list__item">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="./assets/img/icon-envelop.png"
+                            alt="viserfly"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold text-uppercase t-text-white">
+                            Email
+                          </p>
+                          <p class="mb-0 t-text-white vf-info-list__text">
+                            demo@dmail.Com
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="vf-info-list__item">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="./assets/img/icon-location.png"
+                            alt="viserfly"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold text-uppercase t-text-white">
+                            Address
+                          </p>
+                          <p class="mb-0 t-text-white vf-info-list__text">
+                            Aricona 147/2 UK
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list--row__item ms-auto">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="./assets/img/icon-phone.png"
+                        alt="viserfly"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="ms-3">
+                      <p
+                        class="mb-0 fw-md text-uppercase t-text-white xxl-text"
+                      >
+                        +123 - 456 - 7890
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="nav-container">
+                <!-- Navigation Toggler  -->
+                <div
+                  class="
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                    d-lg-none
+                  "
+                >
+                  <a
+                    href="#"
+                    class="
+                      primary-menu__link
+                      t-link
+                      search--toggler
+                      text-center
+                      t-text-white
+                    "
+                  >
+                    <i class="bx bx-search"></i>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn--sqr btn--primary nav--toggle t-text-white"
+                  >
+                    <i class="bx bx-menu"></i>
+                  </button>
+                </div>
+                <!-- Navigation Toggler End -->
+
+                <!-- Navigation  -->
+                <nav class="navs">
+                  <!-- Primary Menu  -->
+                  <ul class="list primary-menu">
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize">
+                        home
+                      </a>
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="index.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >home 1</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="home-2.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >home 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >courses</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="course.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >courses</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="course-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >course details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >trainer</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="trainer.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >trainer</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="trainer-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >trainer details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >pages</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="about.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >about</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="faq.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >FAQ</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="gallery.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >gallery</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="become-pilot.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >become pilot</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="contact.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >contact</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="error.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >404</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a
+                        href="blog.html"
+                        class="primary-menu__link text-capitalize"
+                        >blog</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="blog-post.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >blog post</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="classic-blog.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >classic blog</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="blog-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >blog details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >event</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="event.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >event</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="event-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >event details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list d-none d-lg-block">
+                      <a
+                        href="#"
+                        class="
+                          primary-menu__link
+                          t-link
+                          search--toggler
+                          text-center
+                        "
+                      >
+                        <i class="bx bx-search"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- Primary Menu End -->
+                  <!-- User Login  -->
+                  <div class="mx-3 ms-lg-auto me-lg-0">
+                    <ul class="list primary-menu primary-menu--alt">
+                      <li class="primary-menu__list text-center">
+                        <a
+                          href="#"
+                          class="btn btn--md btn--primary fw-bold w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#vfSignIn"
+                        >
+                          Join Now
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- User Login End -->
+                </nav>
+                <!-- Navigation End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="hero__content">
+        <div class="container">
+          <div class="row g-3 justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1 class="hero__content-title text-capitalize t-text-white">
+                contact with us
+              </h1>
+              <ul class="list list--row breadcrumbs justify-content-center">
+                <li class="list--row__item breadcrumbs__item">
+                  <a
+                    href="index.html"
+                    class="
+                      t-link
+                      breadcrumbs__link
+                      text-uppercase
+                      t-text-white
+                      t-link--primary
+                    "
+                    >home</a
+                  >
+                </li>
+                <li class="list--row__item breadcrumbs__item">
+                  <a
+                    href="contact.html"
+                    class="
+                      t-link
+                      breadcrumbs__link
+                      text-uppercase
+                      t-text-white
+                      t-link--primary
+                    "
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Contact  -->
+    <div class="section">
+      <div class="container">
+        <div class="row gy-5 gy-md-0 gx-xl-5 align-items-center">
+          <div class="col-md-6 col-xl-5">
+            <ul class="list list--column">
+              <li class="list--column__item-xl">
+                <div class="d-flex align-items-center bg--light-1 p-3 p-lg-4">
+                  <div class="flex-shrink-0 contact-icon-box--primary">
+                    <img
+                      src="./assets/img/icon-location-pin-primary.png"
+                      alt="viserfly"
+                      class="contact-icon"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <p
+                      class="
+                        mb-2
+                        fw-bold
+                        text-capitalize
+                        t-text-heading
+                        xl-text
+                      "
+                    >
+                      Office Address
+                    </p>
+                    <p class="mb-0">28 Benin, south of Niger #5 San</p>
+                    <p class="mb-0">Francisco, United States of America</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list--column__item-xl">
+                <div class="d-flex align-items-center bg--light-1 p-3 p-lg-4">
+                  <div class="flex-shrink-0 contact-icon-box--primary">
+                    <img
+                      src="./assets/img/icon-paper-plane-primary.png"
+                      alt="viserfly"
+                      class="contact-icon"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <p
+                      class="
+                        mb-2
+                        fw-bold
+                        text-capitalize
+                        t-text-heading
+                        xl-text
+                      "
+                    >
+                      Email Address
+                    </p>
+                    <p class="mb-0">hello@demosite.com</p>
+                    <p class="mb-0">ticket@cyarb.com</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list--column__item-xl">
+                <div class="d-flex align-items-center bg--light-1 p-3 p-lg-4">
+                  <div class="flex-shrink-0 contact-icon-box--primary">
+                    <img
+                      src="./assets/img/icon-phone-primary.png"
+                      alt="viserfly"
+                      class="contact-icon"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <p
+                      class="
+                        mb-2
+                        fw-bold
+                        text-capitalize
+                        t-text-heading
+                        xl-text
+                      "
+                    >
+                      Phone Number
+                    </p>
+                    <p class="mb-0">+123 - 456 - 7890 - 124</p>
+                    <p class="mb-0">+123 - 456 - 7890 - 125</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-7">
+            <div class="query bg--light-1">
+              <h3
+                class="
+                  query__title
+                  text-center text-md-start text-capitalize
+                  mt-0
+                "
+              >
+                Send Your Messages
+              </h3>
+              <form action="#" class="row g-4">
+                <div class="col-12">
+                  <input
+                    type="email"
+                    class="
+                      form-control
+                      form-control-custom
+                      form-control-custom--outline
+                      form-control-custom--outline-dark
+                    "
+                    placeholder="email address"
+                  />
+                </div>
+                <div class="col-12">
+                  <div class="custom--nice-select">
+                    <select>
+                      <option data-display="Courses">Select Courses</option>
+                      <option value="1">FAA Pilot Training</option>
+                      <option value="2">Online Pilot Training</option>
+                      <option value="3">EASA Pilot Training</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <textarea
+                    cols="30"
+                    rows="5"
+                    class="
+                      form-control
+                      form-control-custom--outline form-control-custom--dark
+                    "
+                    placeholder="Writing Something"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="btn btn--lg btn--primary text-capitalize">
+                    Send Message
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- GMap  -->
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-12">
+          <div class="gmap">
+            <iframe
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GMap End -->
+
+    <!-- CTA  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cta bg--primary">
+            <div class="row g-3 align-items-lg-center">
+              <div class="col-12 col-lg-4 col-xl-3">
+                <div class="footer-logo text-center">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="viserfly"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-8 col-xl-9">
+                <ul
+                  class="
+                    list list--row
+                    justify-content-center justify-content-md-between
+                    align-items-md-center
+                  "
+                >
+                  <li class="list--row__item">
+                    <h3
+                      class="
+                        text-capitalize
+                        t-text-white
+                        mt-0
+                        text-center text-md-start
+                        ps-xl-3
+                      "
+                    >
+                      Like to become a pilot
+                    </h3>
+                    <p class="t-text-white text-center text-md-start ps-xl-3">
+                      Lorem ipsum dolor sit amet consectetuer
+                    </p>
+                  </li>
+                  <li class="list--row__item">
+                    <a
+                      href="become-pilot.html"
+                      class="t-link btn btn--light btn--lg text-capitalize"
+                      >become an pilot</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">about me</h4>
+              <p class="t-text-white t-short-para">
+                Maecenas tempus tellus egondime honcus sequam seitmet dipiscing
+                sem eque sedipsuNam quam
+              </p>
+              <ul class="list list--row">
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-vimeo"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-pinterest-alt"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">courses</h4>
+              <ul class="list list--column">
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airline pilot for USA
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airline pilot For Asian
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airkine Direct Program
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    College Degree Program
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Mechanic Training
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">quick link</h4>
+              <ul class="list list--column">
+                <li class="list--column__item">
+                  <a
+                    href="about.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    About
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="faq.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Faq
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="faq.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Privacy & Policy
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="become-pilot.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Admission
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="trainer.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Trainer
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">newsletter</h4>
+              <p class="t-text-white t-short-para">
+                Boluptatem accusantiu dolor laudantium totaaperiam
+              </p>
+              <form action="#" class="newsletter t-mt-30">
+                <input
+                  type="text"
+                  class="newsletter__input form-control"
+                  placeholder="email address"
+                />
+                <button class="newsletter__btn flex-shrink-0">
+                  <i class="bx bxs-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p class="mb-0 t-text-white text-center text-capitalize">
+          Copyright &copy; 2022. All Rights Reserved By Viserfly
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top -->
+    <div class="back-to-top">
+      <span class="back-top">
+        <i class="bx bxs-chevron-up"></i>
+      </span>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Scripts  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

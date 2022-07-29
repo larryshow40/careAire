@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViserFly - Aviation & Flight School</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="assets/img/favicon.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <!-- Slick  -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css" />
+    <!-- Box Icon  -->
+    <link rel="stylesheet" href="assets/css/lib/boxicons.css" />
+    <!-- Nice Select  -->
+    <link rel="stylesheet" href="assets/css/lib/nice-select.css" />
+    <!-- Odometer  -->
+    <link rel="stylesheet" href="assets/css/lib/odometer-theme-default.css" />
+    <!-- Magnific PopUp -->
+    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Preloader  -->
+    <div class="preloader">
+      <div class="preloader__loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Modal -->
+    <div class="modal fade" id="vfSignIn" tabindex="-1" aria-hidden="true">
+      <div
+        class="
+          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="auth-form">
+              <button
+                type="button"
+                class="btn-close auth-form__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="container-fluid p-lg-0">
+                <div class="row g-lg-0">
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <div class="h-100 auth-form__bg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="auth-form__content section">
+                      <h3 class="text-capitalize text-center mt-0 mb-4">
+                        Welcome to viserfly
+                      </h3>
+                      <form action="#" class="row g-4">
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bxs-user"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="auth-form__input"
+                              placeholder="user name or email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button
+                            class="
+                              btn btn--primary btn--xxl
+                              w-100
+                              text-capitalize
+                              xl-text
+                            "
+                          >
+                            sign in
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Don't have an account yet?
+                            <button
+                            type="button"
+                              class="t-link border-0 bg--light btn-link t-link--primary text--primary"
+                              data-bs-target="#vfSignUp" data-bs-toggle="modal"
+                            >
+                              create account
+                            </button>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__divider">
+                            <span
+                              class="
+                                d-block
+                                text-center text-capitalize
+                                auth-form__divider-text
+                              "
+                            >
+                              or
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Continue with social media
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <ul class="list list--row justify-content-center">
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--primary
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--danger
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-youtube"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--info
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="vfSignUp" tabindex="-1" aria-hidden="true">
+      <div
+        class="
+          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="auth-form">
+              <button
+                type="button"
+                class="btn-close auth-form__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="container-fluid p-lg-0">
+                <div class="row g-lg-0">
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <div class="h-100 auth-form__bg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="auth-form__content section">
+                      <h3 class="text-capitalize text-center mt-0 mb-4">
+                        Welcome to viserfly
+                      </h3>
+                      <form action="#" class="row g-4">
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bxs-user"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="auth-form__input"
+                              placeholder="user name or email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="confirm password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button
+                            class="
+                              btn btn--primary btn--xxl
+                              w-100
+                              text-capitalize
+                              xl-text
+                            "
+                          >
+                            create account
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Already have an account yet?
+                            <button
+                            type="button"
+                              class="t-link border-0 bg--light btn-link t-link--primary text--primary"
+                              data-bs-target="#vfSignIn" data-bs-toggle="modal"
+                            >
+                              sign in
+                            </button>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__divider">
+                            <span
+                              class="
+                                d-block
+                                text-center text-capitalize
+                                auth-form__divider-text
+                              "
+                            >
+                              or
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Continue with social media
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <ul class="list list--row justify-content-center">
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--primary
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--danger
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-youtube"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--info
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 End-->
+    <!-- search Popup -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+      <form action="#" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search....." />
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </form>
+    </div>
+    <!--search Popup -->
+    <!-- Banner  -->
+    <div class="banner">
+      <header class="header">
+        <div class="container">
+          <div class="row g-0 align-items-center align-items-lg-start">
+            <div class="col-6 col-lg-2">
+              <!-- Logo  -->
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/logo.png"
+                  alt="viserhyip"
+                  class="img-fluid logo__is"
+                />
+              </a>
+              <!-- Logo End -->
+            </div>
+            <div class="col-6 col-lg-10">
+              <ul class="list list--row d-none d-lg-flex align-items-center">
+                <li class="list--row__item">
+                  <ul class="list vf-info-list">
+                    <li class="vf-info-list__item">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="./assets/img/icon-envelop.png"
+                            alt="viserfly"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold text-uppercase t-text-white">
+                            Email
+                          </p>
+                          <p class="mb-0 t-text-white vf-info-list__text">
+                            demo@dmail.Com
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="vf-info-list__item">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="./assets/img/icon-location.png"
+                            alt="viserfly"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold text-uppercase t-text-white">
+                            Address
+                          </p>
+                          <p class="mb-0 t-text-white vf-info-list__text">
+                            Aricona 147/2 UK
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list--row__item ms-auto">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="./assets/img/icon-phone.png"
+                        alt="viserfly"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="ms-3">
+                      <p
+                        class="mb-0 fw-md text-uppercase t-text-white xxl-text"
+                      >
+                        +123 - 456 - 7890
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="nav-container">
+                <!-- Navigation Toggler  -->
+                <div
+                  class="
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                    d-lg-none
+                  "
+                >
+                  <a
+                    href="#"
+                    class="
+                      primary-menu__link
+                      t-link
+                      search--toggler
+                      text-center
+                      t-text-white
+                    "
+                  >
+                    <i class="bx bx-search"></i>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn--sqr btn--primary nav--toggle t-text-white"
+                  >
+                    <i class="bx bx-menu"></i>
+                  </button>
+                </div>
+                <!-- Navigation Toggler End -->
+
+                <!-- Navigation  -->
+                <nav class="navs">
+                  <!-- Primary Menu  -->
+                  <ul class="list primary-menu">
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize">
+                        home
+                      </a>
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="index.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >home 1</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="home-2.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >home 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >courses</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="course.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >courses</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="course-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >course details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >trainer</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="trainer.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >trainer</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="trainer-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >trainer details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >pages</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="about.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >about</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="faq.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >FAQ</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="gallery.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >gallery</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="become-pilot.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >become pilot</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="contact.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >contact</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="error.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >404</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a
+                        href="blog.html"
+                        class="primary-menu__link text-capitalize"
+                        >blog</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="blog-post.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >blog post</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="classic-blog.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >classic blog</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="blog-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >blog details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >event</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="event.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >event</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="event-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >event details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list d-none d-lg-block">
+                      <a
+                        href="#"
+                        class="
+                          primary-menu__link
+                          t-link
+                          search--toggler
+                          text-center
+                        "
+                      >
+                        <i class="bx bx-search"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- Primary Menu End -->
+                  <!-- User Login  -->
+                  <div class="mx-3 ms-lg-auto me-lg-0">
+                    <ul class="list primary-menu primary-menu--alt">
+                      <li class="primary-menu__list text-center">
+                        <a
+                          href="#"
+                          class="btn btn--md btn--primary fw-bold w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#vfSignIn"
+                        >
+                          Join Now
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- User Login End -->
+                </nav>
+                <!-- Navigation End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="hero__content">
+        <div class="container">
+          <div class="row g-3 justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1 class="hero__content-title text-capitalize t-text-white">
+                blog post
+              </h1>
+              <ul class="list list--row breadcrumbs justify-content-center">
+                <li class="list--row__item breadcrumbs__item">
+                  <a
+                    href="index.html"
+                    class="
+                      t-link
+                      breadcrumbs__link
+                      text-uppercase
+                      t-text-white
+                      t-link--primary
+                    "
+                    >home</a
+                  >
+                </li>
+                <li class="list--row__item breadcrumbs__item">
+                  <a
+                    href="blog-post.html"
+                    class="
+                      t-link
+                      breadcrumbs__link
+                      text-uppercase
+                      t-text-white
+                      t-link--primary
+                    "
+                    >blog post</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Blog Section  -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/team-4.jpg"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/team-1.jpg"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/team-3.jpg"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0 ">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/course-img-1.png"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0 ">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/course-img-2.png"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0 ">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/course-img-3.png"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/course-img-4.jpg"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/gal-2.png"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="blog-details.html" class="t-link blog-post__img">
+                <img
+                  src="assets/img/gal-3.png"
+                  alt="viserfly"
+                  class="blog-post__img-is"
+                />
+              </a>
+              <div class="blog-post__body">
+                <div class="blog-post__date">
+                  <h4 class="mt-0 mb-1 t-text-white">26</h4>
+                  <p class="mb-0 t-text-white text-capitalize">may</p>
+                </div>
+                <h4 class="text-capitalize mt-0">
+                  <a href="blog-details.html" class="t-link blog-post__title">
+                    Faucibus Nullam Quis Ante Eti Qrci Egetros Saucibus Tincnt.
+                  </a>
+                </h4>
+                <ul class="list list--row">
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bxs-user"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        By
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >Robart Jons</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list--row__item">
+                    <div class="blog-post__meta">
+                      <div class="blog-post__meta-icon me-2">
+                        <i class="bx bx-message-dots"></i>
+                      </div>
+                      <div class="blog-post__meta-text text-uppercase">
+                        <a href="blog-post.html" class="t-link t-link--primary t-text"
+                          >25 comments</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="blog-post__article mt-4 mb-0">
+                  Donec interdum metus ehendrerit auet doldiam sagittis ligula
+                  eget egestas libero turpis velsra smiunc nulla testa peina ola
+                  oreso loerm ipsums amet
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul
+              class="
+                list list--row
+                justify-content-center
+                align-items-center
+                t-mt-60
+              "
+            >
+              <li class="list--row__item">
+                <a
+                  href="#"
+                  class="
+                    t-link t-link--primary
+                    d-inline-block
+                    text--primary text-capitalize
+                    fw-md
+                  "
+                >
+                  previous
+                </a>
+              </li>
+              <li class="list--row__item">
+                <a href="#" class="t-link paginations"> 01 </a>
+              </li>
+              <li class="list--row__item">
+                <a href="#" class="t-link paginations"> 02 </a>
+              </li>
+              <li class="list--row__item">
+                <a href="#" class="t-link paginations"> 03 </a>
+              </li>
+              <li class="list--row__item">
+                <a href="#" class="t-link paginations"> 04 </a>
+              </li>
+              <li class="list--row__item">
+                <a
+                  href="#"
+                  class="
+                    t-link t-link--primary
+                    d-inline-block
+                    text--primary text-capitalize
+                    fw-md
+                  "
+                >
+                  next
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- CTA  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cta bg--primary">
+            <div class="row g-3 align-items-lg-center">
+              <div class="col-12 col-lg-4 col-xl-3">
+                <div class="footer-logo text-center">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="viserfly"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-8 col-xl-9">
+                <ul
+                  class="
+                    list list--row
+                    justify-content-center justify-content-md-between
+                    align-items-md-center
+                  "
+                >
+                  <li class="list--row__item">
+                    <h3
+                      class="
+                        text-capitalize
+                        t-text-white
+                        mt-0
+                        text-center text-md-start
+                        ps-xl-3
+                      "
+                    >
+                      Like to become a pilot
+                    </h3>
+                    <p class="t-text-white text-center text-md-start ps-xl-3">
+                      Lorem ipsum dolor sit amet consectetuer
+                    </p>
+                  </li>
+                  <li class="list--row__item">
+                    <a
+                      href="become-pilot.html"
+                      class="t-link btn btn--light btn--lg text-capitalize"
+                      >become an pilot</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">about me</h4>
+              <p class="t-text-white t-short-para">
+                Maecenas tempus tellus egondime honcus sequam seitmet dipiscing
+                sem eque sedipsuNam quam
+              </p>
+              <ul class="list list--row">
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-vimeo"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-pinterest-alt"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">courses</h4>
+              <ul class="list list--column">
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airline pilot for USA
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airline pilot For Asian
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airkine Direct Program
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    College Degree Program
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Mechanic Training
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">quick link</h4>
+              <ul class="list list--column">
+                <li class="list--column__item">
+                  <a
+                    href="about.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    About
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="faq.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Faq
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="faq.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Privacy & Policy
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="become-pilot.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Admission
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="trainer.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Trainer
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">newsletter</h4>
+              <p class="t-text-white t-short-para">
+                Boluptatem accusantiu dolor laudantium totaaperiam
+              </p>
+              <form action="#" class="newsletter t-mt-30">
+                <input
+                  type="text"
+                  class="newsletter__input form-control"
+                  placeholder="email address"
+                />
+                <button class="newsletter__btn flex-shrink-0">
+                  <i class="bx bxs-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p class="mb-0 t-text-white text-center text-capitalize">
+          Copyright &copy; 2022. All Rights Reserved By Viserfly
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top -->
+    <div class="back-to-top">
+      <span class="back-top">
+        <i class="bx bxs-chevron-up"></i>
+      </span>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Scripts  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

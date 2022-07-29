@@ -1,0 +1,10 @@
+.query {
+    padding: 30px 15px;
+    border-radius: 5px;
+    @include lg-screen {
+        padding: 30px;
+    }
+    @include xli-screen {
+        padding: 50px;
+    }
+}

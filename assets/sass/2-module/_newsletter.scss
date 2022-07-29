@@ -1,0 +1,48 @@
+.newsletter {
+    display: flex;
+    border: 1px solid $white;
+    border-radius: 2px;
+    max-width: 600px;
+    &--dark {
+      border-color: $border;
+      .newsletter__input {
+        color: $heading-text;
+        &:focus {
+          color: $text;
+        }
+        &::placeholder {
+          color: $text;
+        }
+      }
+      .newsletter__btn {
+        color: $primary;
+      }
+    }
+    &__input {
+      height: 50px;
+      line-height: 48px;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      color: $white;
+      &:focus {
+        outline: none;
+        color: $white;
+        box-shadow: none;
+        background: transparent;
+      }
+      &::placeholder {
+        text-transform: capitalize;
+        color: rgba($white, 0.9);
+      }
+    }
+    &__btn {
+      padding-left: 10px;
+      padding-right: 10px;
+      border: none;
+      font-size: 20px;
+      background: transparent;
+      color: $white;
+    }
+  }
+  

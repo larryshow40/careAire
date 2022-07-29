@@ -1,0 +1,38 @@
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid $gray;
+    font-size: 24px;
+    line-height: 1;
+    color: $gray;
+    background: rgba($white, .1);
+    &:hover {
+        color: $primary;
+        background: $white;
+        border-color: $white;
+    }
+    &--alt {
+        @extend .social-icon;
+        border: 1px solid $dark-1;
+        background: $dark-1;
+        color: $white;
+        &:hover {
+            color: $white;
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+    &--primary {
+        @extend .social-icon;
+        color: $text;
+        &:hover {
+            color: $white;
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+}

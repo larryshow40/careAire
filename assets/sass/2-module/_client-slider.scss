@@ -1,0 +1,12 @@
+.client-slider {
+    position: relative;
+    &__item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    //Slider Style
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}

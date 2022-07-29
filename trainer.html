@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViserFly - Aviation & Flight School</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="assets/img/favicon.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <!-- Slick  -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css" />
+    <!-- Box Icon  -->
+    <link rel="stylesheet" href="assets/css/lib/boxicons.css" />
+    <!-- Nice Select  -->
+    <link rel="stylesheet" href="assets/css/lib/nice-select.css" />
+    <!-- Odometer  -->
+    <link rel="stylesheet" href="assets/css/lib/odometer-theme-default.css" />
+    <!-- Magnific PopUp -->
+    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Preloader  -->
+    <div class="preloader">
+      <div class="preloader__loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Modal -->
+    <div class="modal fade" id="vfSignIn" tabindex="-1" aria-hidden="true">
+      <div
+        class="
+          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="auth-form">
+              <button
+                type="button"
+                class="btn-close auth-form__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="container-fluid p-lg-0">
+                <div class="row g-lg-0">
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <div class="h-100 auth-form__bg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="auth-form__content section">
+                      <h3 class="text-capitalize text-center mt-0 mb-4">
+                        Welcome to viserfly
+                      </h3>
+                      <form action="#" class="row g-4">
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bxs-user"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="auth-form__input"
+                              placeholder="user name or email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button
+                            class="
+                              btn btn--primary btn--xxl
+                              w-100
+                              text-capitalize
+                              xl-text
+                            "
+                          >
+                            sign in
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Don't have an account yet?
+                            <button
+                            type="button"
+                              class="t-link border-0 bg--light btn-link t-link--primary text--primary"
+                              data-bs-target="#vfSignUp" data-bs-toggle="modal"
+                            >
+                              create account
+                            </button>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__divider">
+                            <span
+                              class="
+                                d-block
+                                text-center text-capitalize
+                                auth-form__divider-text
+                              "
+                            >
+                              or
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Continue with social media
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <ul class="list list--row justify-content-center">
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--primary
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--danger
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-youtube"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--info
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="vfSignUp" tabindex="-1" aria-hidden="true">
+      <div
+        class="
+          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="auth-form">
+              <button
+                type="button"
+                class="btn-close auth-form__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="container-fluid p-lg-0">
+                <div class="row g-lg-0">
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <div class="h-100 auth-form__bg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="auth-form__content section">
+                      <h3 class="text-capitalize text-center mt-0 mb-4">
+                        Welcome to viserfly
+                      </h3>
+                      <form action="#" class="row g-4">
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bxs-user"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="auth-form__input"
+                              placeholder="user name or email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__input-group">
+                            <span class="auth-form__input-icon">
+                              <i class="bx bx-lock"></i>
+                            </span>
+
+                            <input
+                              type="password"
+                              class="auth-form__input"
+                              placeholder="confirm password"
+                            />
+
+                            <span
+                              class="
+                                auth-form__input-icon auth-form__toggle-pass
+                              "
+                            >
+                              <i class="bx bxs-hide"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button
+                            class="
+                              btn btn--primary btn--xxl
+                              w-100
+                              text-capitalize
+                              xl-text
+                            "
+                          >
+                            create account
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Already have an account yet?
+                            <button
+                            type="button"
+                              class="t-link border-0 bg--light btn-link t-link--primary text--primary"
+                              data-bs-target="#vfSignIn" data-bs-toggle="modal"
+                            >
+                              sign in
+                            </button>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="auth-form__divider">
+                            <span
+                              class="
+                                d-block
+                                text-center text-capitalize
+                                auth-form__divider-text
+                              "
+                            >
+                              or
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 text-capitalize text-center">
+                            Continue with social media
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <ul class="list list--row justify-content-center">
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--primary
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--danger
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-youtube"></i>
+                              </a>
+                            </li>
+                            <li class="list--row__item">
+                              <a
+                                href="#"
+                                class="
+                                  t-link
+                                  icon icon--circle icon--md
+                                  bg--info
+                                  t-text-white
+                                  t-link--light
+                                "
+                              >
+                                <i class="bx bxl-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 End-->
+    <!-- search Popup -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+      <form action="#" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search....." />
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </form>
+    </div>
+    <!--search Popup -->
+    <!-- Banner  -->
+    <div class="banner">
+      <header class="header">
+        <div class="container">
+          <div class="row g-0 align-items-center align-items-lg-start">
+            <div class="col-6 col-lg-2">
+              <!-- Logo  -->
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/logo.png"
+                  alt="viserhyip"
+                  class="img-fluid logo__is"
+                />
+              </a>
+              <!-- Logo End -->
+            </div>
+            <div class="col-6 col-lg-10">
+              <ul class="list list--row d-none d-lg-flex align-items-center">
+                <li class="list--row__item">
+                  <ul class="list vf-info-list">
+                    <li class="vf-info-list__item">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="./assets/img/icon-envelop.png"
+                            alt="viserfly"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold text-uppercase t-text-white">
+                            Email
+                          </p>
+                          <p class="mb-0 t-text-white vf-info-list__text">
+                            demo@dmail.Com
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="vf-info-list__item">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="./assets/img/icon-location.png"
+                            alt="viserfly"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold text-uppercase t-text-white">
+                            Address
+                          </p>
+                          <p class="mb-0 t-text-white vf-info-list__text">
+                            Aricona 147/2 UK
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list--row__item ms-auto">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="./assets/img/icon-phone.png"
+                        alt="viserfly"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="ms-3">
+                      <p
+                        class="mb-0 fw-md text-uppercase t-text-white xxl-text"
+                      >
+                        +123 - 456 - 7890
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="nav-container">
+                <!-- Navigation Toggler  -->
+                <div
+                  class="
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                    d-lg-none
+                  "
+                >
+                  <a
+                    href="#"
+                    class="
+                      primary-menu__link
+                      t-link
+                      search--toggler
+                      text-center
+                      t-text-white
+                    "
+                  >
+                    <i class="bx bx-search"></i>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn--sqr btn--primary nav--toggle t-text-white"
+                  >
+                    <i class="bx bx-menu"></i>
+                  </button>
+                </div>
+                <!-- Navigation Toggler End -->
+
+                <!-- Navigation  -->
+                <nav class="navs">
+                  <!-- Primary Menu  -->
+                  <ul class="list primary-menu">
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize">
+                        home
+                      </a>
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="index.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >home 1</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="home-2.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >home 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >courses</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="course.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >courses</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="course-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >course details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >trainer</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="trainer.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >trainer</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="trainer-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >trainer details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >pages</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="about.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >about</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="faq.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >FAQ</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="gallery.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >gallery</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="become-pilot.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >become pilot</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="contact.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >contact</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="error.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >404</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a
+                        href="blog.html"
+                        class="primary-menu__link text-capitalize"
+                        >blog</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="blog-post.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >blog post</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="classic-blog.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >classic blog</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="blog-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >blog details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list has-sub">
+                      <a href="#" class="primary-menu__link text-capitalize"
+                        >event</a
+                      >
+                      <ul class="primary-menu__sub">
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="event.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >event</a
+                          >
+                        </li>
+                        <li class="primary-menu__sub-list">
+                          <a
+                            href="event-details.html"
+                            class="
+                              t-link
+                              primary-menu__sub-link
+                              text-capitalize
+                            "
+                            >event details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="primary-menu__list d-none d-lg-block">
+                      <a
+                        href="#"
+                        class="
+                          primary-menu__link
+                          t-link
+                          search--toggler
+                          text-center
+                        "
+                      >
+                        <i class="bx bx-search"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- Primary Menu End -->
+                  <!-- User Login  -->
+                  <div class="mx-3 ms-lg-auto me-lg-0">
+                    <ul class="list primary-menu primary-menu--alt">
+                      <li class="primary-menu__list text-center">
+                        <a
+                          href="#"
+                          class="btn btn--md btn--primary fw-bold w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#vfSignIn"
+                        >
+                          Join Now
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- User Login End -->
+                </nav>
+                <!-- Navigation End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="hero__content">
+        <div class="container">
+          <div class="row g-3 justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1 class="hero__content-title text-capitalize t-text-white">
+                Our expert trainer
+              </h1>
+              <ul class="list list--row breadcrumbs justify-content-center">
+                <li class="list--row__item breadcrumbs__item">
+                  <a
+                    href="index.html"
+                    class="
+                      t-link
+                      breadcrumbs__link
+                      text-uppercase
+                      t-text-white
+                      t-link--primary
+                    "
+                    >home</a
+                  >
+                </li>
+                <li class="list--row__item breadcrumbs__item">
+                  <a
+                    href="trainer.html"
+                    class="
+                      t-link
+                      breadcrumbs__link
+                      text-uppercase
+                      t-text-white
+                      t-link--primary
+                    "
+                    >trainer</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Client Section  -->
+    <div class="section--sm section--top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="client-slider">
+              <div class="client-slider__item">
+                <img
+                  src="./assets/img/client-1.png"
+                  alt="viserfly"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+              <div class="client-slider__item">
+                <img
+                  src="./assets/img/client-2.png"
+                  alt="viserfly"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+              <div class="client-slider__item">
+                <img
+                  src="./assets/img/client-3.png"
+                  alt="viserfly"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+              <div class="client-slider__item">
+                <img
+                  src="./assets/img/client-4.png"
+                  alt="viserfly"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+              <div class="client-slider__item">
+                <img
+                  src="./assets/img/client-5.png"
+                  alt="viserfly"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+              <div class="client-slider__item">
+                <img
+                  src="./assets/img/client-3.png"
+                  alt="viserfly"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Client Section End -->
+
+    <!-- Trainer Section  -->
+    <section class="section--sm section--bottom">
+      <div class="section__head">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-xl-6">
+              <div class="text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="vf-custom-icon me-2 flex-shrink-0">
+                    <img
+                      src="./assets/img/icon-plane.png"
+                      alt="viserfly"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <p class="mb-0 text-capitalize text--primary xxl-text">
+                    trainer
+                  </p>
+                </div>
+                <h2 class="text-capitalize">Meet With Our Trainer</h2>
+                <p class="t-short-para mx-auto mb-0">
+                  Maecenas tempus tellus eget condimentu honemn quam semper
+                  libero sit amet adipiscing sem neque sed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="trainer-slider">
+              <div class="trainer-slider__item">
+                <div class="team-card">
+                  <div class="team-card__img">
+                    <img
+                      src="./assets/img/team-1.jpg"
+                      alt="viserfly"
+                      class="team-card__img-is"
+                    />
+                  </div>
+                  <div class="team-card__body">
+                    <h5
+                      class="
+                        text-capitalize text-center
+                        mt-0
+                        mb-2
+                        team-card__title
+                      "
+                    >
+                      kuna huggo
+                    </h5>
+                    <p class="text-center text-capitalize team-card__sub-title">
+                      trainer
+                    </p>
+                    <ul class="list list--row justify-content-center">
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="trainer-slider__item">
+                <div class="team-card">
+                  <div class="team-card__img">
+                    <img
+                      src="./assets/img/team-2.jpg"
+                      alt="viserfly"
+                      class="team-card__img-is"
+                    />
+                  </div>
+                  <div class="team-card__body">
+                    <h5
+                      class="
+                        text-capitalize text-center
+                        mt-0
+                        mb-2
+                        team-card__title
+                      "
+                    >
+                      Robart Williams
+                    </h5>
+                    <p class="text-center text-capitalize team-card__sub-title">
+                      trainer
+                    </p>
+                    <ul class="list list--row justify-content-center">
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="trainer-slider__item">
+                <div class="team-card">
+                  <div class="team-card__img">
+                    <img
+                      src="./assets/img/team-3.jpg"
+                      alt="viserfly"
+                      class="team-card__img-is"
+                    />
+                  </div>
+                  <div class="team-card__body">
+                    <h5
+                      class="
+                        text-capitalize text-center
+                        mt-0
+                        mb-2
+                        team-card__title
+                      "
+                    >
+                      Tomas Kishan
+                    </h5>
+                    <p class="text-center text-capitalize team-card__sub-title">
+                      trainer
+                    </p>
+                    <ul class="list list--row justify-content-center">
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="trainer-slider__item">
+                <div class="team-card">
+                  <div class="team-card__img">
+                    <img
+                      src="./assets/img/team-4.jpg"
+                      alt="viserfly"
+                      class="team-card__img-is"
+                    />
+                  </div>
+                  <div class="team-card__body">
+                    <h5
+                      class="
+                        text-capitalize text-center
+                        mt-0
+                        mb-2
+                        team-card__title
+                      "
+                    >
+                      Divas Kings
+                    </h5>
+                    <p class="text-center text-capitalize team-card__sub-title">
+                      trainer
+                    </p>
+                    <ul class="list list--row justify-content-center">
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="trainer-slider__item">
+                <div class="team-card">
+                  <div class="team-card__img">
+                    <img
+                      src="./assets/img/team-5.jpg"
+                      alt="viserfly"
+                      class="team-card__img-is"
+                    />
+                  </div>
+                  <div class="team-card__body">
+                    <h5
+                      class="
+                        text-capitalize text-center
+                        mt-0
+                        mb-2
+                        team-card__title
+                      "
+                    >
+                      kuna huggo
+                    </h5>
+                    <p class="text-center text-capitalize team-card__sub-title">
+                      trainer
+                    </p>
+                    <ul class="list list--row justify-content-center">
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list--row__item-sm">
+                        <a href="#" class="t-link social-icon">
+                          <i class="bx bxl-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trainer Section End -->
+
+    <!-- CTA  -->
+    <div class="section bg--light-1">
+      <div class="container">
+        <div class="row g-4 justify-content-xxl-between align-items-center">
+          <div class="col-lg-6 col-xxl-5">
+            <ul class="list counter-list counter-list--dark">
+              <li class="counter-list__item">
+                <h1
+                  class="
+                    odometer--plus odometer--custom odometer--plus-primary
+                    mt-0
+                    mb-0
+                    text-uppercase text--primary text-center
+                  "
+                >
+                  <span class="odometer odometer--custom" id="totalStaff"
+                    >0</span
+                  >
+                </h1>
+                <p
+                  class="
+                    mb-0
+                    t-text-heading
+                    fw-md
+                    text-capitalize
+                    xxl-text
+                    text-center
+                  "
+                >
+                  total staffs
+                </p>
+              </li>
+              <li class="counter-list__item">
+                <h1
+                  class="
+                    mt-0
+                    mb-0
+                    odometer--custom
+                    text-uppercase text--primary text-center
+                  "
+                >
+                  <span class="odometer" id="totalAward">0</span>
+                </h1>
+                <p
+                  class="
+                    mb-0
+                    t-text-heading
+                    fw-md
+                    text-capitalize
+                    xxl-text
+                    text-center
+                  "
+                >
+                  winning awards
+                </p>
+              </li>
+              <li class="counter-list__item">
+                <h1
+                  class="
+                    mt-0
+                    mb-0
+                    odometer--custom
+                    text-uppercase text--primary text-center
+                  "
+                >
+                  <span class="odometer" id="totalStudent">0</span>
+                </h1>
+                <p
+                  class="
+                    mb-0
+                    t-text-heading
+                    fw-md
+                    text-capitalize
+                    xxl-text
+                    text-center
+                  "
+                >
+                  happy students
+                </p>
+              </li>
+              <li class="counter-list__item">
+                <h1
+                  class="
+                    odometer--plus odometer--custom odometer--plus-primary
+                    mt-0
+                    mb-0
+                    text-uppercase text--primary text-center
+                  "
+                >
+                  <span class="odometer" id="totalCourse">0</span>
+                </h1>
+                <p
+                  class="
+                    mb-0
+                    t-text-heading
+                    fw-md
+                    text-capitalize
+                    xxl-text
+                    text-center
+                  "
+                >
+                  total courses
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-xxl-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="query bg--light">
+                  <h3
+                    class="
+                      query__title
+                      text-center text-lg-start text-capitalize
+                      mt-0
+                    "
+                  >
+                    join with us
+                  </h3>
+                  <form action="#" class="row g-4">
+                    <div class="col-12">
+                      <input
+                        type="email"
+                        class="
+                          form-control
+                          form-control-custom
+                          form-control-custom--outline
+                          form-control-custom--outline-dark
+                        "
+                        placeholder="email address"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <div class="custom--nice-select">
+                        <select>
+                          <option data-display="Courses">Select Courses</option>
+                          <option value="1">FAA Pilot Training</option>
+                          <option value="2">Online Pilot Training</option>
+                          <option value="3">EASA Pilot Training</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        cols="30"
+                        rows="5"
+                        class="
+                          form-control
+                          form-control-custom--outline form-control-custom--dark
+                        "
+                        placeholder="Writing Something"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <a
+                        href="#"
+                        class="btn btn--lg btn--primary text-capitalize"
+                      >
+                        become an pilot
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
+
+    <!-- Team  -->
+    <div class="section--sm section--top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-9 col-xl-3">
+            <h2 class="text-capitalize mt-0">Meet With our expert Team</h2>
+            <p class="t-short-para mb-0">
+              Maecenas tempus, tellus eget condimentu honemn quam semper libero
+              sit adipiscing sem neque sed ipsum. Nam quam nundit vel
+              pulviendrerit idlorem.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="team-card team-card--alt">
+              <div class="team-card__img">
+                <img
+                  src="./assets/img/team-1.jpg"
+                  alt="viserfly"
+                  class="team-card__img-is"
+                />
+              </div>
+              <div class="team-card__overlay">
+                <p
+                  class="
+                    mb-1
+                    xxl-text
+                    text-capitalize
+                    t-text-white
+                    fw-md
+                    text-center
+                  "
+                >
+                  kuna huggo
+                </p>
+                <p class="text-capitalize t-text-white text-center mb-2">
+                  Chef Consultant
+                </p>
+                <ul class="list list--row justify-content-center">
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="team-card team-card--alt">
+              <div class="team-card__img">
+                <img
+                  src="./assets/img/team-4.jpg"
+                  alt="viserfly"
+                  class="team-card__img-is"
+                />
+              </div>
+              <div class="team-card__overlay">
+                <p
+                  class="
+                    mb-1
+                    xxl-text
+                    text-capitalize
+                    t-text-white
+                    fw-md
+                    text-center
+                  "
+                >
+                  kuna huggo
+                </p>
+                <p class="text-capitalize t-text-white text-center mb-2">
+                  Chef Consultant
+                </p>
+                <ul class="list list--row justify-content-center">
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="team-card team-card--alt">
+              <div class="team-card__img">
+                <img
+                  src="./assets/img/team-3.jpg"
+                  alt="viserfly"
+                  class="team-card__img-is"
+                />
+              </div>
+              <div class="team-card__overlay">
+                <p
+                  class="
+                    mb-1
+                    xxl-text
+                    text-capitalize
+                    t-text-white
+                    fw-md
+                    text-center
+                  "
+                >
+                  kuna huggo
+                </p>
+                <p class="text-capitalize t-text-white text-center mb-2">
+                  Chef Consultant
+                </p>
+                <ul class="list list--row justify-content-center">
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list--row__item-sm">
+                    <a
+                      href="#"
+                      class="t-link social-icon t-text-white"
+                      tabindex="0"
+                    >
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Feedback Section  -->
+    <div class="section--sm section--bottom">
+      <div class="section__head">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-xl-6">
+              <div class="text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="vf-custom-icon me-2 flex-shrink-0">
+                    <img
+                      src="./assets/img/icon-plane.png"
+                      alt="viserfly"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <p class="mb-0 text-capitalize text--primary xxl-text">
+                    feedback
+                  </p>
+                </div>
+                <h2 class="text-capitalize">What Say Our Student</h2>
+                <p class="t-short-para mx-auto mb-0">
+                  Maecenas tempus tellus eget condimentu honemn quam semper
+                  libero sit amet adipiscing sem neque sed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="feedback-slider">
+              <div class="feedback-slider__item">
+                <div class="feedback-card bg--light-1">
+                  <div class="feedback-card__profile mb-4">
+                    <img
+                      src="./assets/img/team-1.jpg"
+                      alt="viserfly"
+                      class="feedback-card__profile-img flex-shrink-0"
+                    />
+                    <div class="feedback-card__profile-info">
+                      <p
+                        class="
+                          feedback-card__profile-name
+                          fw-md
+                          text-capitalize
+                          mb-0
+                        "
+                      >
+                        Tomas Kishan
+                      </p>
+                      <p class="mb-0 text-capitalize">Student , USA</p>
+                    </div>
+                  </div>
+                  <p class="feedback-card__comment">
+                    Platea tincidunt praesent auis facilisis vel srnare
+                    nulltciesoin luctus velilibero. Atligula amet selit est
+                    morbi sit eros
+                  </p>
+                  <ul class="list list--row">
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card bg--light-1">
+                  <div class="feedback-card__profile mb-4">
+                    <img
+                      src="./assets/img/team-2.jpg"
+                      alt="viserfly"
+                      class="feedback-card__profile-img flex-shrink-0"
+                    />
+                    <div class="feedback-card__profile-info">
+                      <p
+                        class="
+                          feedback-card__profile-name
+                          fw-md
+                          text-capitalize
+                          mb-0
+                        "
+                      >
+                        Robar Williams
+                      </p>
+                      <p class="mb-0 text-capitalize">Student , USA</p>
+                    </div>
+                  </div>
+                  <p class="feedback-card__comment">
+                    Platea tincidunt praesent auis facilisis vel srnare
+                    nulltciesoin luctus velilibero. Atligula amet selit est
+                    morbi sit eros
+                  </p>
+                  <ul class="list list--row">
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card bg--light-1">
+                  <div class="feedback-card__profile mb-4">
+                    <img
+                      src="./assets/img/team-3.jpg"
+                      alt="viserfly"
+                      class="feedback-card__profile-img flex-shrink-0"
+                    />
+                    <div class="feedback-card__profile-info">
+                      <p
+                        class="
+                          feedback-card__profile-name
+                          fw-md
+                          text-capitalize
+                          mb-0
+                        "
+                      >
+                        Kisan Kingson
+                      </p>
+                      <p class="mb-0 text-capitalize">Student , USA</p>
+                    </div>
+                  </div>
+                  <p class="feedback-card__comment">
+                    Platea tincidunt praesent auis facilisis vel srnare
+                    nulltciesoin luctus velilibero. Atligula amet selit est
+                    morbi sit eros
+                  </p>
+                  <ul class="list list--row">
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card bg--light-1">
+                  <div class="feedback-card__profile mb-4">
+                    <img
+                      src="./assets/img/team-4.jpg"
+                      alt="viserfly"
+                      class="feedback-card__profile-img flex-shrink-0"
+                    />
+                    <div class="feedback-card__profile-info">
+                      <p
+                        class="
+                          feedback-card__profile-name
+                          fw-md
+                          text-capitalize
+                          mb-0
+                        "
+                      >
+                        Mariya Khan
+                      </p>
+                      <p class="mb-0 text-capitalize">Student , USA</p>
+                    </div>
+                  </div>
+                  <p class="feedback-card__comment">
+                    Platea tincidunt praesent auis facilisis vel srnare
+                    nulltciesoin luctus velilibero. Atligula amet selit est
+                    morbi sit eros
+                  </p>
+                  <ul class="list list--row">
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card bg--light-1">
+                  <div class="feedback-card__profile mb-4">
+                    <img
+                      src="./assets/img/team-5.jpg"
+                      alt="viserfly"
+                      class="feedback-card__profile-img flex-shrink-0"
+                    />
+                    <div class="feedback-card__profile-info">
+                      <p
+                        class="
+                          feedback-card__profile-name
+                          fw-md
+                          text-capitalize
+                          mb-0
+                        "
+                      >
+                        Mariya Khan
+                      </p>
+                      <p class="mb-0 text-capitalize">Student , USA</p>
+                    </div>
+                  </div>
+                  <p class="feedback-card__comment">
+                    Platea tincidunt praesent auis facilisis vel srnare
+                    nulltciesoin luctus velilibero. Atligula amet selit est
+                    morbi sit eros
+                  </p>
+                  <ul class="list list--row">
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                    <li class="list--row__item-sm">
+                      <span class="d-inline-block text--warning">
+                        <i class="bx bxs-star"></i>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feedback Section End -->
+
+    <!-- CTA  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cta bg--primary">
+            <div class="row g-3 align-items-lg-center">
+              <div class="col-12 col-lg-4 col-xl-3">
+                <div class="footer-logo text-center">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="viserfly"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-8 col-xl-9">
+                <ul
+                  class="
+                    list list--row
+                    justify-content-center justify-content-md-between
+                    align-items-md-center
+                  "
+                >
+                  <li class="list--row__item">
+                    <h3
+                      class="
+                        text-capitalize
+                        t-text-white
+                        mt-0
+                        text-center text-md-start
+                        ps-xl-3
+                      "
+                    >
+                      Like to become a pilot
+                    </h3>
+                    <p class="t-text-white text-center text-md-start ps-xl-3">
+                      Lorem ipsum dolor sit amet consectetuer
+                    </p>
+                  </li>
+                  <li class="list--row__item">
+                    <a
+                      href="become-pilot.html"
+                      class="t-link btn btn--light btn--lg text-capitalize"
+                      >become an pilot</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">about me</h4>
+              <p class="t-text-white t-short-para">
+                Maecenas tempus tellus egondime honcus sequam seitmet dipiscing
+                sem eque sedipsuNam quam
+              </p>
+              <ul class="list list--row">
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-vimeo"></i>
+                  </a>
+                </li>
+                <li class="list--row__item">
+                  <a href="#" class="t-link social-icon--alt">
+                    <i class="bx bxl-pinterest-alt"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">courses</h4>
+              <ul class="list list--column">
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airline pilot for USA
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airline pilot For Asian
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Airkine Direct Program
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    College Degree Program
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="course.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Mechanic Training
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">quick link</h4>
+              <ul class="list list--column">
+                <li class="list--column__item">
+                  <a
+                    href="about.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    About
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="faq.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Faq
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="faq.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Privacy & Policy
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="become-pilot.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Admission
+                  </a>
+                </li>
+                <li class="list--column__item">
+                  <a
+                    href="trainer.html"
+                    class="t-link t-link--primary t-text-white text-capitalize"
+                  >
+                    Trainer
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mt-0 t-text-white text-capitalize">newsletter</h4>
+              <p class="t-text-white t-short-para">
+                Boluptatem accusantiu dolor laudantium totaaperiam
+              </p>
+              <form action="#" class="newsletter t-mt-30">
+                <input
+                  type="text"
+                  class="newsletter__input form-control"
+                  placeholder="email address"
+                />
+                <button class="newsletter__btn flex-shrink-0">
+                  <i class="bx bxs-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p class="mb-0 t-text-white text-center text-capitalize">
+          Copyright &copy; 2022. All Rights Reserved By Viserfly
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top -->
+    <div class="back-to-top">
+      <span class="back-top">
+        <i class="bx bxs-chevron-up"></i>
+      </span>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Scripts  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/odo-counter.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

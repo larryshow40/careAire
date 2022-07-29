@@ -1,0 +1,77 @@
+.auth-form {
+    position: relative;
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &__bg {
+        background-image: url(../img/auth-form-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__content {
+        @include md-screen {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @include xl-screen {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+    &__input-group {
+        display: flex;
+        align-items: center;
+        background: $light-1;
+        border-radius: 3px;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border: none;
+        background: transparent;
+        &:focus {
+            background: transparent;
+        }
+        &::placeholder {
+            text-transform: capitalize;
+        }
+    }
+    &__input-icon {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+    &__divider {
+        overflow: hidden;
+        &-text {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                height: 1px;
+                width: 50%;
+                background: $border;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -30px;
+                height: 1px;
+                width: 50%;
+                background: $border;
+            }
+        }
+    }
+}

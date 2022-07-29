@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 90px;
+    height: 90px;
+    padding: 15px;
+    background: $primary;
+    @include md-screen {
+        max-width: 155px;
+        height: 155px;
+        padding: 30px;
+    }
+    @include xl-screen {
+        max-width: 186px;
+    }
+    @include xlii-screen {
+        max-width: 216px;
+    }
+    &__is {
+       object-fit: contain;
+    }
+}

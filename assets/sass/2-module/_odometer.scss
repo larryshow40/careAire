@@ -1,0 +1,32 @@
+.odometer--plus {
+  position: relative;
+  &::after {
+    content: "\ebc0";
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: $white;
+  }
+  &-primary {
+    &::after {
+      color: $primary;
+    }
+  }
+}
+.odometer--custom {
+  .odometer {
+    font-family: $heading-font !important;
+    @include xxl-screen {
+      font-size: 80px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.service-section {
+    padding-top: clamp(30px, 4vw, 60px);
+    padding-bottom: clamp(30px, 4vw, 60px);
+    @include xxl-screen {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: -150px;
+        position: relative;
+        z-index: 3;
+    }
+}

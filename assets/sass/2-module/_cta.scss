@@ -1,0 +1,8 @@
+.cta {
+    padding: 30px;
+    margin-bottom: clamp(60px, 8vw, 120px);
+    @include lg-screen {
+        clip-path: polygon(50% 0%, 100% 0, 100% 89%, 50% 100%, 50% 100%, 0 89%, 0 0);
+        margin-bottom: -125px;
+    }
+}

@@ -1,0 +1,15 @@
+.header {
+    position: relative;
+    z-index: 1;
+    &__top {
+        padding: 13px 45px;
+        position: relative;
+        background: $light-1;
+            @include lg-screen {
+                padding: 12px  25px;
+            }
+            @include xl-screen {
+                padding: 12px  45px;
+            }
+    }
+}
